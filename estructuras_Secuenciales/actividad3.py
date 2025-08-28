@@ -10,3 +10,11 @@ if nota >= 6:
     print("Aprobado")
 else:
     print("Desaprobado")
+
+#actividad 3
+numPar=int(input("Ingrese un numero par: "))
+if numPar%2 == 0:   
+    print("Ha ingresado un número par")
+else:
+    print("Por favor, ingrese un número par")
+    
