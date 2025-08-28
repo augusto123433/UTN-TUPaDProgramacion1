@@ -28,3 +28,8 @@ elif edad >= 18 and edad < 30:
     print("Es un adulto/a joven")
 else:
     print("Es un adulto/a mayor")
+
+#actividad 5
+contraseña= input("Ingrese la contraseña entre 8 y 14 caracteres: ")
+if len(contraseña) >= 8 and len(contraseña) <= 14:
+    print("Contraseña válida")
