@@ -33,3 +33,20 @@ else:
 contraseña= input("Ingrese la contraseña entre 8 y 14 caracteres: ")
 if len(contraseña) >= 8 and len(contraseña) <= 14:
     print("Contraseña válida")
+
+#actividad 6
+import random 
+from statistics import mode, median, mean 
+# Generar una lista de 50 números aleatorios entre 1 y 100
+numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+
+media = mean(numeros_aleatorios)
+mediana = median(numeros_aleatorios)
+moda = mode(numeros_aleatorios)
+
+if media > mediana and mediana > moda:
+    print("El Sesgo es positivo")
+elif moda > mediana and mediana > media:
+    print("El Sesgo es negativo")
+else:
+    print("El Sesgo es nulo")
