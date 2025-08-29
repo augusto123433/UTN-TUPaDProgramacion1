@@ -50,3 +50,12 @@ elif moda > mediana and mediana > media:
     print("El Sesgo es negativo")
 else:
     print("El Sesgo es nulo")
+
+#actividad 7
+frase = input("INGRESE LA FRASE EN minusculas: ")
+#.endswith(("a","e","i","o","u")) → revisa si el texto termina con alguna de esas letras.
+if frase.endswith(("a","e","i","o","u")):
+    frase = frase + "!" 
+    print(frase)
+else:
+    print(frase)
